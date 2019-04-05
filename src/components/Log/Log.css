@@ -1,0 +1,61 @@
+.log-cont {
+  border: 1px solid black;
+  padding: 10px;
+  height: 300px;
+  border-radius: 10px;
+}
+.log-tile-cont{
+overflow-y: scroll;
+max-height: 225px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.won{
+  color: green;
+}
+
+.lost {
+  color: red;
+}
+
+/* .sparkley {
+
+  background: lighten( #2c3e50 , 10% );
+  color: rgba(255,255,255,1);
+  border: none;
+
+  padding: 16px 36px;
+  font-weight: normal;
+
+  border-radius: 3px;
+  transition: all 0.25s ease;
+
+  box-shadow: 0 38px 32px -23px black;
+  margin: 0 1em 1em;
+}
+
+.sparkley:hover {
+  background: #2c3e50;
+  color: transparentize( rgba(255,255,255,1),0.8 );
+} */
+
+@keyframes shimmerBackground {
+  0% {background-position:-5000px 0}
+  100% {background-position:5000px 0}
+}
+
+.shimmer
+{
+background-image: -moz-linear-gradient(160deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0.85) 60%, rgba(255,255,255,0) 100%);
+background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(25%,rgba(255,255,255,0)), color-stop(60%,rgba(255,255,255,0.85)), color-stop(100%,rgba(255,255,255,0)));
+background-image: -webkit-linear-gradient(160deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 25%,rgba(255,255,255,0.85) 60%,rgba(255,255,255,0) 100%);
+background-image: -o-linear-gradient(160deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 25%,rgba(255,255,255,0.85) 60%,rgba(255,255,255,0) 100%);
+background-image: -ms-linear-gradient(160deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 25%,rgba(255,255,255,0.85) 60%,rgba(255,255,255,0) 100%);
+background-image: linear-gradient(160deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 25%,rgba(255,255,255,0.85) 60%,rgba(255,255,255,0) 100%);
+background-repeat: repeat-y;
+background-position:-5000px 0;
+animation: shimmerBackground 8s linear infinite;
+}
